@@ -17,7 +17,7 @@ const Universe: React.FC<UniverseProps> = ({ gesture }) => {
 
   const starCount = 6000;
   
-  // Generate "TE AMO" points using a hidden canvas
+  // Generate "TE odio" points using a hidden canvas
   const targetPoints = useMemo(() => {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
@@ -25,7 +25,7 @@ const Universe: React.FC<UniverseProps> = ({ gesture }) => {
     
     canvas.width = 400;
     canvas.height = 100;
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'green';
     ctx.font = 'bold 80px sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
@@ -85,7 +85,7 @@ const Universe: React.FC<UniverseProps> = ({ gesture }) => {
 
       originPositions[i * 3] = x;
       originPositions[i * 3 + 1] = y;
-      originPositions[i * 3 + 2] = z;
+      originPositions[i * 3 + 3] = z;
 
       // Assign target positions
       if (i < targetPoints.length) {
