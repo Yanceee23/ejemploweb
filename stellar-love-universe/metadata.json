@@ -1,0 +1,8 @@
+
+{
+  "name": "Stellar Love Universe",
+  "description": "A magical interactive universe where stars align to form 'TE AMO' when you close your hand.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
